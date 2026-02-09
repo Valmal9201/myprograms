@@ -25,9 +25,9 @@ name = input("What is your name?: ")
 print(message, name, end = "\n", sep = " ")
 print ("Stephen, I hope this answers your question.")
 # cmd + / = comment all
-# num1 = 6
-# num2 = 7
-# print(num1 + num2)
+num1 = 6
+num2 = 7
+print(num1 + num2)
 # Input
 # reads/understands all inputs as Str
 # int() convert input as integer, input 1st, int() convert
