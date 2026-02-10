@@ -1,6 +1,7 @@
 # This is a comment, the interpreter ignores this line
 print("Sup cuh?")
-# variable, dynamically typed, typing becomes set after equal sign, can be changed
+# variable, dynamically typed, typing becomes set after equal sign
+# can be changed
 name = "Marshall"
 name = 67
 print("Hello", name)
@@ -9,8 +10,11 @@ print("Hello", name)
 # First legit program :)
 
 # Variable
-# named as message, lowercase, no # start, uppercase reserved for something else, no swear words and meaningful names
-# no specific type, dynamic & changes by situation and context, no semi colon to end code, press enter instead
+# named as message, lowercase, no # start,
+# uppercase reserved for something else, no swear words,
+# meaningful names
+# no specific type, dynamic & changes by situation and context
+# no semi colon to end code, press enter instead
 
 # = Sign
 # "=" = assignment/operator, left = variable, right = value
@@ -19,8 +23,10 @@ print("Hello", name)
 #"Hello, welcome to ISC4U" = value or data
 
 # Types of Data Types
-# int = integer, float = +/- decimal, bool = boolean (True/False), str = String: Alpha, numeric, special symbols
-# list = data type that can hold many other data types (java arraylist w/o restrictions), dict = dictionary
+# int = integer, float = +/- decimal, bool = boolean (True/False),
+# str = String: Alpha, numeric, special symbols
+# list = data type that can hold many other data types 
+# (java arraylist w/o restrictions), dict = dictionary
 message = "Hello, welcome to ISC4U."
 
 # Input
