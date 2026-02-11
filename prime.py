@@ -46,3 +46,6 @@ else:
             print(f"{num} is a composite number.")
             break
         divider += 1
+
+# How Make faster
+# 6 * 7 = 42, 3 * 4 = 42, 7 * 6 = 46, 4 * 3 = 12
