@@ -9,7 +9,7 @@
 # factor_counter = 0
 # divider = 1
 # while divider <= num:
-#     if num % divider == 0: # this means divder is a factor!
+#     if num % divider == 0: # this means divider is a factor!
 #         factor_counter += 1
 #     divider += 1
 # # end of while loop
@@ -60,30 +60,63 @@
 # divider = 1
 # stop = int(math.sqrt(num)) + 1 # kicks and giggles
 # while divider < stop:
-#     if num % divider ==0:
+#     if num % divider == 0:
 #         quotient = num // divider
 #         print(divider, quotient)
 #     divider += 1
 
-# Actual Faster
-import math # importing math module
-num = int(input("Enter a number: "))
-stop = int(math.sqrt(num)) + 1 # stop = int(num ** 0.5) + 1
-isPrime = True # variable intialization
-if num == 2 or num == 3:
-    isPrime = True
-elif num % 2 == 0:
-    isPrime = False
-else:
-    divder = 3
-    isPrime = True
-    while divider <= stop:
-        if num % divider == 0:
-            isPrime = False
-            break
-        divider += 2
+# # Actual Faster
+# import math # importing math module
+# num = int(input("Enter a number: "))
+# stop = int(math.sqrt(num)) + 1 # stop = int(num ** 0.5) + 1
+# isPrime = True # variable intialization
+# if num == 2 or num == 3:
+#     isPrime = True
+# elif num % 2 == 0:
+#     isPrime = False
+# else:
+#     divider = 3
+#     isPrime = True
+#     while divider <= stop:
+#         if num % divider == 0:
+#             isPrime = False
+#             break
+#         divider += 2
+# #Output
+# if isPrime:
+#     print(f"{num} is a prime number.")
+# else:
+#     print(f"{num} is a composite number.")
+
+# Abundant, Deficient, Perfect?
+
+# import math
+# num = int(input("Enter a number: "))
+# stop = int(math.sqrt(num)) + 1
+# isPrime = True
+# divider = 2
+# sum = 0
+# while divider < stop:
+#     if num % divider == 0:
+#         quotient = num // divider
+#         sum = sum + divider + quotient
+#     divider += 1
+# #Output
+# sum += 1
+# if sum == num:
+#     print(f"{num} is a perfect number.")
+# elif sum < num:
+#     print(f"{num} is a deficient number.")
+# else:
+#     print(f"{num} is a abundant number.")
+
+# Perfect Square < 1 000 000
+import math
+num = 1
+stop = int(math.sqrt(1000000)) + 1
+sum = 0
+while num < stop:
+    sum += num * num
+    num += 1
 #Output
-if isPrime:
-    print(f"{num} is a prime number.")
-else:
-    print(f"{num} is a composite number.")
+print(sum)
