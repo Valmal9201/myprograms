@@ -88,14 +88,3 @@
 #     print(f"{num} is a prime number.")
 # else:
 #     print(f"{num} is a composite number.")
-
-# Perfect Square < 1 000 000
-import math
-num = 1
-stop = int(math.sqrt(1000000)) + 1
-sum = 0
-while num < stop:
-    sum += num * num
-    num += 1
-#Output
-print(sum)
