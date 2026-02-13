@@ -59,24 +59,24 @@ def numType(num):
         return 0
 # end of numType()
 
-# # Perfect Square < 1 000 000 My Solution
-# import math
-# num = 1
-# stop = int(math.sqrt(1000000)) + 1
-# sum = 0
-# while num < stop:
-#     sum += num * num
-#     num += 1
-# #Output
-# print(sum)
-
-# Perfect Square < 1 000 000 In Class Solution
+# Perfect Numbers < 1 000 000 In Class Solution
 value = 1
 perfect_sum = 0
-while value <= 1000000
+while value <= 1000000:
     if numType(value) == 0:
         # numType() returned a perfect result
         perfect_sum += value
     value += 1
 
-print(f"Total sum of all perfect number under 1000 000:" {perfect_sum})
+print(f"Total sum of all perfect number under 1000 000: {perfect_sum}")
+
+# Perfect Square < 1 000 000 My Solution
+import math
+num = 1
+stop = int(math.sqrt(1000000)) + 1
+sum = 0
+while num < stop:
+    sum += num * num
+    num += 1
+#Output
+print(sum)
