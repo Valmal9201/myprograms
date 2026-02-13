@@ -2,6 +2,7 @@
 # # 1, 4, 6, 8, 10, 12
 # # 9, 27
 
+# # Find Prime Numbers In Class Solution
 # # print "Enter a number: ", asks for input form user, converts to int
 # num = int(input("Enter a number: "))
 # print(num)
