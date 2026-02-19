@@ -30,7 +30,8 @@ print("Hello", name)
 message = "Hello, welcome to ISC4U."
 
 # Input
-# Example of: built in function, stores String input from terminal to the related variable, assign to "name"
+# Example of: built in function, stores String input from terminal
+# to the related variable, assign to "name"
 name = input("What is your name?: ")
 
 # , makes space when print, end = "\n", sep = " "
