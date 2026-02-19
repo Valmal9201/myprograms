@@ -1,6 +1,7 @@
 import random
 guess = input("Rock, Paper, or Scissors?: ")
 comp = random.randrange(0, 3) # 0: Rock, 1: Paper, 2: Scissors
+
 while True:
     print(f"User thrown: {guess} and the CPU thrown: {comp} (0: Rock, 1: Paper, 2: Scissors)")
     if guess == "Rock" and comp == 1:
