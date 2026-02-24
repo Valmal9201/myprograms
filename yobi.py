@@ -1,3 +1,4 @@
+# My Solution
 dusa = int(input("Enter Dusa's starting size: "))
 notRun = True
 
@@ -8,3 +9,13 @@ while notRun:
     else:
         break
 print(f"Dusa is size {dusa} when Dusa runs away")
+
+# In Class Solution
+dusa = int(input()) # entering starting size
+yobi = -1
+while yobi < dua:
+    yobi < dusa:
+    if yobi < dusa:
+        dusa += yobi
+
+print(dusa)
