@@ -18,21 +18,16 @@ def digitSum(num):
         if num == 0:
             ctr += 1
     total1 = total
-    print("total: ", total)
-
 
     while total1 > 9:
         total1 = 0
         while total > 9:
             total1 += total % 10
             total = total // 10
-            print("t2", total)
             if total <= 9:
                 ctr = ctr + 1
-                print("ctr: ", ctr)
                 break
         total = total1
-        print("t22", total1)
     return ctr
 # end of digitsum()
 
@@ -43,8 +38,15 @@ print(digitSum(num))
 # In Class Solution
 def digitSum(num):
     total = 0
-    while num !=0:
-        last = n % 10
+    while num != 0:
+        last = num % 10
         total += last
         num = num // 10
-    return total
+
+    value = int(input())
+    counter = 0
+    while value > 9:
+        value = digitSum(value)
+        counter = counter + 1
+
+print(f"It took {counter} tries.")
