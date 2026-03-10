@@ -47,6 +47,7 @@ def isAnagram(word1, word2):
     return True
 
 # In Class Solution:
+# 1
 def clean(word):
     # remove digits, makes it lowercase, remove special charcters
     result = ""
@@ -61,6 +62,31 @@ def anagram1(word1, word2):
     word1.sort() # only list
     word2.sort() # word2 = sorted(word2)
     return word1 == word2
+
+# 2 Compare the frequency of characters
+def anagram1(word1, word2):
+    word1 = clean(word1)
+    word2 = clean(word2)
+    dic_word1 = {}
+    dic_word2 = {}
+    for char in word1:
+        if char in dic_word1: # Frequency Table
+            dic_word1[char] += 1
+        else:
+            dic_word1[char] = 1
+
+    for char in word2:
+        if char in dic_word2:
+            dic_word2[char] += 1
+        else:
+            dic_word2[char] = 1
+        
+    for key, value in dic_word1.items():
+        if key not in dic_word2:
+            return False
+        elif dic_word2[key] != value
+            return False
+    return len(dic_word1.keys()) == len(dic_word2.keys())
 
 # How to convert a list of characters -> string
 a = list("Hello") # H,e,l,l,o
