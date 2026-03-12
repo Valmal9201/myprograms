@@ -47,7 +47,8 @@ def isAnagram(word1, word2):
     return True
 
 # In Class Solution:
-# 1
+# Two anagram solutions:
+# 1. Sort both strings and compare equality
 def clean(word):
     # remove digits, makes it lowercase, remove special charcters
     result = ""
@@ -96,3 +97,8 @@ print(b)
 a = list("Hello") # H,e,l,l,o
 b = ''.join(a) #Hello #String method
 print(b)
+# Some points:
+# - if two strings are cleaned, then anagrams must have equal length
+# - if two strings are cleaned, the anagrams must share the same set of characters
+
+# How to sort w/o sorted() and .sort()
