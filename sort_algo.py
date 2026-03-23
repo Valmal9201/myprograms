@@ -14,16 +14,6 @@ def bubble(a_list):
                 swapped = True
     
 # No Return b/c not change value just order
-def insertion(a_list):
-    sort = True
-    ()
-
-def selection(a_list):
-    b_list = []
-    for i in range(0, len(a_list))
-        b_list.append(min(a_list)):
-        a_list.del[min(a_list)]
-
 #In class
 def destruction_select(a_list):
     b_list = []
