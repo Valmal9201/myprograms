@@ -1,3 +1,4 @@
+a_list = ["e", "d", "f", "b", "a", "g", "c"]
 # In Class Solution
 # Thinking about sorting :)
 # Bubble Sort
@@ -6,13 +7,16 @@ def bubble(a_list):
     swapped = True
     while swapped:
         swapped = False
+        i = 1
         # write the bubbling portion first
-        for i in range(1, len(a_list)):
-            a_list[i - 1] > a_list[i]:
+        for i in range(i, len(a_list)):
+            if a_list[i - 1] > a_list[i]:
                 # swapping identity
-                a_list[i - 1], a_list[i], a_list[i - 1]
+                a_list[i - 1], a_list[i] = a_list[i], a_list[i - 1]
                 swapped = True
-    
+    return a_list
+print(bubble(a_list))
+
 # No Return b/c not change value just order
 #In class
 def destruction_select(a_list):
@@ -31,4 +35,3 @@ def insertion(a_list):
                 print(a_list)
             else:
                 break
-
