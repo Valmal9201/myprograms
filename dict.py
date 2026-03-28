@@ -1,21 +1,26 @@
-# def dictpractice(value):
-#     ctr = 1
-#     sequence = {}
-#     for i in range(1, value + 1):
-#         num = i
-#         while num != 1:
-#             if num % 2 == 0:
-#                 num = num // 2
-#             else:
-#                 num = 3 * num + 1
-#             ctr += 1
-#         if 
-#         sequence[i] = ctr
-#         ctr = 1
-#     return sequence
+# My Solution
+def dictpractice(value):
+    sequence = {
+        1: 1
+    }
+    ctr = 1
+    old = 0
+    for i in range(1, value):
+        num = i
+        while num != 1:
+            if num % 2 == 0:
+                num = num // 2
+            else:
+                num = 3 * num + 1
+            ctr += 1
+        if ctr > old:
+            sequence[i] = ctr
+            store = i
+            old = ctr
+        ctr = 1
+    return store, sequence[store]
 
-# value = 1000000
-# print(dictpractice(value))
+print(dictpractice(1000000))
 
 #In Class Solution
 def collatz(num, table):
