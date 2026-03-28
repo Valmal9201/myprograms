@@ -47,8 +47,6 @@ def isAnagram(word1, word2):
     return True
 
 # In Class Solution:
-# Two anagram solutions:
-# 1. Sort both strings and compare equality
 def clean(word):
     # remove digits, makes it lowercase, remove special charcters
     result = ""
@@ -57,6 +55,8 @@ def clean(word):
             result += c.lower()
     return result
 
+# Two anagram solutions:
+# 1. Sort both strings and compare equality
 def anagram1(word1, word2):
     word1 = list(clean(word1))
     word2 = list(clean(word2))
@@ -72,6 +72,7 @@ def anagram1(word1, word2):
     dic_word2 = {}
     for char in word1:
         if char in dic_word1: # Frequency Table
+            
             dic_word1[char] += 1
         else:
             dic_word1[char] = 1
@@ -81,12 +82,13 @@ def anagram1(word1, word2):
             dic_word2[char] += 1
         else:
             dic_word2[char] = 1
-        
+    
     for key, value in dic_word1.items():
         if key not in dic_word2:
             return False
-        elif dic_word2[key] != value
+        elif dic_word2[key] != value:
             return False
+    
     return len(dic_word1.keys()) == len(dic_word2.keys())
 
 # How to convert a list of characters -> string
@@ -97,6 +99,7 @@ print(b)
 a = list("Hello") # H,e,l,l,o
 b = ''.join(a) #Hello #String method
 print(b)
+
 # Some points:
 # - if two strings are cleaned, then anagrams must have equal length
 # - if two strings are cleaned, the anagrams must share the same set of characters
