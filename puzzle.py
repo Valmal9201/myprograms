@@ -12,9 +12,3 @@ tmp = max(a, b)
 b = tmp # b = 2nd smallest
 a = min(a, b) # a = smallest
 print(a, b, c)
-
-# ???
-max(a, b, c)
-min(a, b, c)
-# tmp = ?
-# b = ?
