@@ -16,7 +16,7 @@ while i < events:
 
 print(f"The final number of dounts when the shop closes is {start}.")
 
-#In Class Solution
+# In Class Solution
 donuts = int(input())
 events = int(input())
 
