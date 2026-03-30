@@ -1,4 +1,4 @@
-#My Solution
+# My Solution
 start = int(input("Number of donuts at beginning of day: "))
 events = int(input("Number of events that affect the number of donuts: "))
 i = 0
